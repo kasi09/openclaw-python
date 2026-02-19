@@ -7,7 +7,6 @@ import pytest
 
 from openclaw_python_skill import Skill, SkillRegistry, get_global_registry
 
-
 # --- Test skill classes ---
 
 

@@ -150,8 +150,7 @@ class SkillRegistry:
             instance = cls()
         except TypeError as e:
             raise TypeError(
-                f"@registry.skill requires {cls.__name__} to be instantiable "
-                f"with no arguments: {e}"
+                f"@registry.skill requires {cls.__name__} to be instantiable with no arguments: {e}"
             ) from e
         self.register(instance)
         return cls
