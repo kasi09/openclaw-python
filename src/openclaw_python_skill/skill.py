@@ -59,6 +59,7 @@ class Skill(ABC):
             return SkillOutput(
                 success=True,
                 result=result,
+                error=None,
                 metadata={
                     "execution_time_ms": execution_time_ms,
                     "skill": self.name,
@@ -70,6 +71,7 @@ class Skill(ABC):
 
             return SkillOutput(
                 success=False,
+                result=None,
                 error=str(e),
                 metadata={
                     "execution_time_ms": execution_time_ms,
