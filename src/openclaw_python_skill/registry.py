@@ -147,7 +147,7 @@ class SkillRegistry:
         if not (isinstance(cls, type) and issubclass(cls, Skill)):
             raise TypeError(f"@registry.skill can only decorate Skill subclasses, got {cls}")
         try:
-            instance = cls()
+            instance = cls()  # type: ignore[call-arg]
         except TypeError as e:
             raise TypeError(
                 f"@registry.skill requires {cls.__name__} to be instantiable with no arguments: {e}"
