@@ -76,7 +76,8 @@ class SkillPipeline:
     def _resolve_skill(self, step: PipelineStep) -> Skill:
         """Resolve a PipelineStep to a concrete Skill instance."""
         if step.skill is not None:
-            return step.skill
+            skill: Skill = step.skill
+            return skill
         if self._registry is None:
             raise ValueError(
                 f"Step references skill '{step.skill_name}' by name, "
