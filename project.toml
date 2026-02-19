@@ -1,0 +1,26 @@
+about = "Python Skills Framework for OpenClaw AI Assistant"
+authors = ["OpenClaw Contributors"]
+requires = "python>=3.9"
+
+[features]
+python = "Pure Python implementation, no Node.js dependency"
+extensible = "Easy base class for custom skills"
+async = "Async/await support for long-running operations"
+typed = "Full type hints for IDE autocomplete"
+tested = "Comprehensive test suite with pytest"
+documented = "Clear documentation and examples"
+
+[integration]
+openclaw = "Designed for OpenClaw skill system"
+github = "Ready for GitHub publication"
+pypi = "Can be published to PyPI"
+
+[skills]
+text_analyzer = "Text analysis with statistics, sentiment, patterns"
+
+[dev]
+testing = "pytest with coverage reporting"
+linting = "ruff for fast Python linting"
+formatting = "black for consistent code style"
+typing = "mypy for static type checking"
+ci_cd = "GitHub Actions for automated tests"
